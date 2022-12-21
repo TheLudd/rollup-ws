@@ -1,0 +1,23 @@
+{
+  "name": "rollup-ws",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "transpile": "esbuild rollup-ts-config.ts > rollup.config.js",
+    "watch": "nodemon -i rollup.config.js -i dist -q -x 'yarn transpile && clear; rollup --silent -c'"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20",
+    "rollup": "^3.7.4"
+  },
+  "dependencies": {
+    "@rollup/plugin-commonjs": "^24.0.0",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "chalk": "^5.2.0",
+    "esbuild": "^0.16.10",
+    "typescript": "^4.9.4",
+    "yafu": "^2.0.12"
+  }
+}

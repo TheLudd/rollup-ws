@@ -1,0 +1,4 @@
+{
+  "ignore": [ "rollup.config.js", "dist" ],
+  "ext": "js,ts"
+}
